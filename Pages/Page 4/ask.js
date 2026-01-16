@@ -46,6 +46,8 @@ function noFunction() {
     if (noClickCount >= 4) {
         noButton.textContent = 'Drück bitte auf Ja :(';
         noButton.style.fontSize = '0.9rem';
+        noButton.style.transform = 'scale(1)'; // Reset scale
+        yesButton.style.transform = 'scale(1)'; // Reset Yes button too
     } else {
         // Button wird bei jedem Klick größer
         const newSize = 1 + (noClickCount * 0.3);
