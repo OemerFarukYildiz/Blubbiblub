@@ -74,6 +74,7 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
+    min-height: 100px;
 }
 
 .btn {
@@ -88,7 +89,7 @@ img {
     transition: all 0.3s ease;
     box-shadow: 0 5px 20px rgba(255, 0, 128, 0.3);
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 .btn:hover {
@@ -98,6 +99,7 @@ img {
 
 .no-btn {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: 100 !important;
 }
 
 .no-btn:hover {

@@ -42,20 +42,20 @@ function noFunction() {
     const noButton = document.getElementById('no');
     const yesButton = document.getElementById('yes');
 
-    // Nach 4 Klicks ändert sich der Text
-    if (noClickCount >= 4) {
+    // Nach 3 Klicks ändert sich der Text
+    if (noClickCount >= 3) {
         noButton.textContent = 'Drück bitte auf Ja :(';
         noButton.style.fontSize = '0.9rem';
         noButton.style.transform = 'scale(1)'; // Reset scale
         yesButton.style.transform = 'scale(1)'; // Reset Yes button too
     } else {
-        // Button wird bei jedem Klick größer
-        const newSize = 1 + (noClickCount * 0.3);
+        // Button wird bei jedem Klick größer (langsamer)
+        const newSize = 1 + (noClickCount * 0.2);
         noButton.style.transform = `scale(${newSize})`;
         noButton.style.transition = 'transform 0.3s ease';
 
         // Yes Button wird kleiner
-        const yesSize = Math.max(0.5, 1 - (noClickCount * 0.1));
+        const yesSize = Math.max(0.6, 1 - (noClickCount * 0.15));
         yesButton.style.transform = `scale(${yesSize})`;
         yesButton.style.transition = 'transform 0.3s ease';
     }
