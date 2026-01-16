@@ -70,12 +70,13 @@ img {
 
 .buttons {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     position: relative;
     min-height: 150px;
+    margin-top: -2rem;
 }
 
 .btn {
@@ -130,10 +131,11 @@ img {
     }
 
     .buttons {
-        gap: 2.5rem;
+        gap: 1.5rem;
         width: 100%;
         justify-content: center;
         min-height: 120px;
+        margin-top: -1rem;
     }
 
     .btn {
