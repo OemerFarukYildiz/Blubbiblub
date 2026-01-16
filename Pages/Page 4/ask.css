@@ -244,38 +244,38 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 0.5rem;
+        padding: 0.3rem;
     }
 
     .content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         min-height: 100vh;
-        padding: 0.5rem;
+        padding: 0.3rem;
     }
 
     h1 {
-        font-size: 1.1rem;
-        margin: 0.5rem 0.3rem;
+        font-size: 0.85rem;
+        margin: 0.3rem 0.2rem;
         text-align: center;
         position: relative;
         top: 0;
-        padding: 0 0.5rem;
-        line-height: 1.4;
+        padding: 0 0.3rem;
+        line-height: 1.3;
     }
 
     .red {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         display: inline-block;
     }
 
     img {
         height: auto;
-        max-height: 40vh;
+        max-height: 35vh;
         width: auto;
-        max-width: 80%;
+        max-width: 70%;
         object-fit: contain;
         position: relative;
         top: auto;
@@ -290,8 +290,8 @@ a{
         justify-content: center;
         align-items: center;
         margin: 0;
-        padding: 1rem 0.5rem 1.5rem;
-        gap: 1.5rem;
+        padding: 0.8rem 0.3rem 1rem;
+        gap: 1rem;
         flex-wrap: nowrap;
         top: auto;
         width: 100%;
@@ -300,13 +300,13 @@ a{
     .btn {
         position: relative;
         top: 0;
-        min-width: 85px;
-        font-size: 0.85rem;
-        padding: 0.6rem 1.2rem;
+        min-width: 70px;
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
     }
 
     .watermark {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -319,27 +319,27 @@ a{
 /* Spezielle Anpassungen für sehr kleine iPhones (SE, etc.) */
 @media only screen and (max-width: 375px) {
     h1 {
-        font-size: 0.95rem;
-        margin: 0.3rem 0.2rem;
+        font-size: 0.75rem;
+        margin: 0.2rem 0.1rem;
     }
 
     .red {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     img {
-        max-height: 35vh;
-        max-width: 75%;
+        max-height: 30vh;
+        max-width: 65%;
     }
 
     .buttons {
-        gap: 1rem;
-        padding: 0.8rem 0.3rem 1rem;
+        gap: 0.8rem;
+        padding: 0.6rem 0.2rem 0.8rem;
     }
 
     .btn {
-        min-width: 75px;
-        font-size: 0.8rem;
-        padding: 0.5rem 1rem;
+        min-width: 65px;
+        font-size: 0.7rem;
+        padding: 0.45rem 0.9rem;
     }
 }
