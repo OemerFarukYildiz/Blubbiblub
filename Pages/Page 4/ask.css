@@ -240,106 +240,103 @@ a{
 @media only screen and (max-width: 428px) {
     body {
         height: 100vh;
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 0.3rem;
+        overflow: hidden;
+        padding: 1rem 0.5rem;
+    }
+
+    .wrapper span {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin: 1rem 0.5rem 1.5rem;
+        text-align: center;
+        position: relative;
+        top: 0;
+        padding: 0 0.5rem;
+        line-height: 1.4;
+        display: block;
+    }
+
+    .red {
+        font-size: 1.5rem;
+        display: inline;
     }
 
     .content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        min-height: 100vh;
-        padding: 0.3rem;
-    }
-
-    h1 {
-        font-size: 0.85rem;
-        margin: 0.3rem 0.2rem;
-        text-align: center;
-        position: relative;
-        top: 0;
-        padding: 0 0.3rem;
-        line-height: 1.3;
-    }
-
-    .red {
-        font-size: 1.1rem;
-        display: inline-block;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 0;
     }
 
     img {
         height: auto;
-        max-height: 35vh;
+        max-height: 45vh;
         width: auto;
-        max-width: 70%;
+        max-width: 85%;
         object-fit: contain;
-        position: relative;
-        top: auto;
-        left: auto;
+        position: static;
         transform: none;
-        margin: 0;
+        margin: 0 auto;
+        display: block;
     }
 
     .buttons {
-        position: relative;
+        position: static;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0;
-        padding: 0.8rem 0.3rem 1rem;
-        gap: 1rem;
+        margin: 0 auto;
+        padding: 0;
+        gap: 1.5rem;
         flex-wrap: nowrap;
         top: auto;
-        width: 100%;
+        width: auto;
     }
 
     .btn {
-        position: relative;
-        top: 0;
-        min-width: 70px;
-        font-size: 0.75rem;
-        padding: 0.5rem 1rem;
+        position: static;
+        top: auto;
+        min-width: 90px;
+        font-size: 0.9rem;
+        padding: 0.7rem 1.3rem;
+        margin: 0;
     }
 
     .watermark {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         left: 50%;
         transform: translateX(-50%);
-    }
-
-    .wrapper span {
-        display: none;
     }
 }
 
 /* Spezielle Anpassungen für sehr kleine iPhones (SE, etc.) */
 @media only screen and (max-width: 375px) {
     h1 {
-        font-size: 0.75rem;
-        margin: 0.2rem 0.1rem;
+        font-size: 1rem;
+        margin: 0.8rem 0.3rem 1rem;
     }
 
     .red {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     img {
-        max-height: 30vh;
-        max-width: 65%;
+        max-height: 40vh;
+        max-width: 80%;
     }
 
     .buttons {
-        gap: 0.8rem;
-        padding: 0.6rem 0.2rem 0.8rem;
+        gap: 1.2rem;
     }
 
     .btn {
-        min-width: 65px;
-        font-size: 0.7rem;
-        padding: 0.45rem 0.9rem;
+        min-width: 80px;
+        font-size: 0.85rem;
+        padding: 0.6rem 1.1rem;
     }
 }
